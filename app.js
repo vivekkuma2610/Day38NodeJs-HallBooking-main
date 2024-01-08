@@ -5,7 +5,7 @@ import { bookRoom, createRoom, customerBookingHistory, listCustomers, listRooms 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.post('/createRoom', createRoom);
 app.post('/book_room', bookRoom);
